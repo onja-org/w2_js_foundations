@@ -13,7 +13,6 @@ Today you'll set up the tools that will be your companions for the rest of your 
 - What those mysterious `npm install` commands were actually doing
 - Why VS Code, Node, and npm work together as a team
 - How your computer's terminal works (and why VS Code's terminal is the same thing)
-- The difference between JavaScript in your browser and JavaScript on your computer
 
 ---
 
@@ -22,8 +21,9 @@ Today you'll set up the tools that will be your companions for the rest of your 
 Before we dive into installation, let's understand what we're building. Think of your development environment like a workshop:
 
 - **VS Code** = Your workbench (where you craft your code)
-- **Node.js** = JavaScript that can talk to your computer (not just browsers)
-- **npm** = The massive shared toolbox where millions of developers contribute tools
+- **Node.js** = The engine that runs JavaScript on your computer
+- **Web Browser** = The engine that runs JavaScript (and interprets HTML and CSS) on the web
+- **npm** = The massive shared toolbox where millions of developers contribute tools (some help you *build* things, others *become part* of what you build)
 - **Terminal/Shell** = Your direct line to give commands to your computer
 
 ### JavaScript's Two Homes
@@ -125,14 +125,80 @@ Even if you already have these tools installed, it's worth understanding what ea
 
 **What it is:** Node Package Manager - a massive library where developers share code tools.
 
+**The key thing beginners find confusing:** npm has two types of packages:
+1. **Development tools** (like testing frameworks, build tools) - these run on your computer to help you build things
+2. **Runtime libraries** (like utility functions, UI components) - these become part of your final application
+
+Think of it like a workshop: some tools help you build (hammer, saw) while others become part of the final product (screws, paint).
+
 **Why it's amazing:**
 - Millions of free, open-source packages
 - Handles dependencies automatically
 - Standard way JavaScript developers share tools
+- Works whether you're building for browsers, servers, or desktop apps
 
 **Test it:**
 1. In your terminal, type `npm --version`
 2. You should see a version number
+
+---
+
+## Setting Up Your Developer Workspace
+
+Before we start creating files, let's establish a clear system for organizing your work. This will save you from the "where did I put that file?" anxiety that plagues many beginners.
+
+(If you already have an organization system that works for you, you can skip this section! This is just one way that you can structure your directories to stay organized.)
+
+### Creating Your Development Folder Structure
+
+We recommend creating a dedicated space for all your coding work:
+
+1. **Open your terminal** (VS Code's terminal or your computer's)
+2. **Navigate to your home directory**: `cd ~`
+3. **Create a development folder**: `mkdir development`
+4. **Navigate into it**: `cd development`
+5. **Create subfolders for different types of work**:
+   ```
+   mkdir labs        # For Onja lab assignments
+   mkdir scratch     # For practice files and experiments
+   mkdir projects    # For larger personal projects
+   ```
+
+### Your New Folder Structure
+
+Your development folder should now look like this:
+```
+~/development/
+├── labs/          # Clone your forked lab repositories here
+├── scratch/       # Practice files, experiments, quick tests
+└── projects/      # Larger projects and portfolio work
+```
+
+### Why This Matters
+
+- **Consistency**: You always know where to find your code
+- **Organization**: Different types of work stay separate
+- **Terminal Navigation**: Easy to navigate with `cd ~/development/labs` or `cd ~/development/scratch`
+- **VS Code Workspace**: You can open entire folders in VS Code with `code ~/development/labs`
+
+### Essential Terminal Navigation Commands
+
+Since you'll be navigating to these folders often, here are the key commands:
+
+- `cd ~` - Go to your home folder
+- `cd ~/development` - Go to your development folder
+- `cd ~/development/scratch` - Go to your scratch folder
+- `ls` (or `dir` on Windows) - List files in current folder
+- `pwd` - See where you currently are
+- `cd ..` - Go up one folder level
+
+### File Naming Best Practices
+
+When creating files for practice:
+- **Use lowercase**: `hello.js` not `Hello.js`
+- **No spaces**: `my-script.js` not `my script.js`
+- **Descriptive names**: `calculator.js` not `thing.js`
+- **Consistent extensions**: Always `.js` for JavaScript files
 
 ---
 
@@ -149,6 +215,8 @@ Remember those `npm install` commands you've been running? Let's see what they a
 3. Open that folder and explore
 
 **What you're seeing:** All the code packages that npm downloaded for you. Each folder is a different tool or library created by developers around the world.
+
+**The key insight:** Some of these packages are like workshop tools (they help you build and test your code), while others are like building materials (they become part of your final application). The npm install command downloaded both types to your computer, but only the "building material" packages would end up in your final website or app.
 
 **Mind-blowing fact:** That `node_modules` folder might contain thousands of files and hundreds of packages, all working together to power your project.
 
@@ -169,15 +237,22 @@ VS Code can do much more than just edit text files.
 
 ### Activity 3: Your First Node.js Program
 
-Let's run JavaScript outside of a browser for the first time.
+Let's run JavaScript outside of a browser for the first time. We'll put this in your new scratch folder.
 
-1. In VS Code, create a new file called `hello.js`
-2. Type: `console.log("Hello from Node.js!");`
-3. Save the file
-4. Open VS Code's terminal
-5. Type: `node hello.js`
+1. **Navigate to your scratch folder**: In terminal, type `cd ~/development/scratch`
+2. **Open VS Code in this folder**: Type `code .` (this opens VS Code in the current directory)
+3. **Create a new file**: In VS Code, create a new file called `hello.js`
+4. **Write your first program**: Type: `console.log("Hello from Node.js!");`
+5. **Save the file**: `Ctrl+S` (or `Cmd+S` on Mac)
+6. **Run your program**: In VS Code's terminal, type `node hello.js`
 
 **What just happened?** You ran JavaScript directly on your computer using Node.js. No browser needed!
+
+**Bonus**: Try creating a few more practice files in your scratch folder:
+- `calculator.js` - Try some math: `console.log(5 + 3 * 2);`
+- `greeting.js` - Try: `console.log("Welcome to JavaScript programming!");`
+
+Remember: Your scratch folder is for experimenting. Don't worry about making mistakes here!
 
 ---
 
