@@ -111,6 +111,8 @@ typeof (5 > 3)      // "boolean"
 
 **Activity**: In the REPL, use `typeof` to check the type of different values. What happens with `typeof "42"`?
 
+> Remember: to exit the REPL, type `.exit` and hit Enter or press `Ctrl + C` twice. This will get you back to your terminal where you can navigate as normal.
+
 ---
 
 ## Part 2: A Taste of JavaScript's Power (20 minutes)
