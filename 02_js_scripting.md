@@ -122,6 +122,28 @@ JavaScript treats numbers and text differently! When you put quotes around numbe
 
 ---
 
+## Running JavaScript on Your Computer (Not in a Browser!)
+
+Before we build our first script, let's pause and appreciate what's happening here. You're about to run JavaScript directly on your computer using Node.js - no browser required!
+
+**This is different from HTML/CSS workflow:**
+- With HTML/CSS: You wrote files and opened them in a browser
+- With Node.js: You write JavaScript files and run them directly on your computer
+
+**The magic command:** `node filename.js`
+- This tells your computer: "Hey, run this JavaScript file using Node.js"
+- Node.js reads your file and executes the JavaScript code
+- The output appears right in your terminal
+
+**Why this matters:**
+- JavaScript isn't limited to web pages anymore
+- You can build desktop applications, servers, command-line tools
+- Same language, new possibilities!
+
+We'll explore JavaScript in browsers later, but for now, enjoy the power of running code directly on your machine.
+
+---
+
 ## Part 2: Your First Real Script (30 minutes)
 
 Now let's take what we learned and build something more substantial. We'll create a fictional character profile script that practices all the operations we just learned.
@@ -173,7 +195,7 @@ console.log("=================================");
 
 **Your turn:**
 1. Customize this script with your own fictional character
-2. Run it with: `node character-profile.js`
+2. Run it with: `node character-profile.js` (This runs your JavaScript directly on your computer!)
 3. Experiment with changing the values and running it again
 
 ---
@@ -241,11 +263,13 @@ console.log("🎉 Calculation complete! Thanks for using Smart Calculator!");
 ```
 
 **Experiment with this script:**
-1. Run it as-is: `node smart-calculator.js`
+1. Run it as-is: `node smart-calculator.js` (Watch your computer execute this JavaScript!)
 2. Change the values of `firstNumber` and `secondNumber`
 3. Run it again and see how the responses change
 4. Try making the numbers equal - what happens?
 5. Try making secondNumber larger than firstNumber
+
+**Notice:** Each time you run `node smart-calculator.js`, your computer executes the entire script from top to bottom. This is different from web pages that stay loaded - your script runs once and finishes.
 
 **Challenge Extensions:**
 - Add more operations (maybe calculating percentages?)
@@ -333,6 +357,8 @@ Before moving to the next session:
 
 In our next session, we'll dive deeper into **data types and operators** - understanding exactly how JavaScript thinks about different kinds of information and what operations you can perform on them.
 
+Later today, we'll also explore JavaScript in the **browser console** - seeing how the same language works in a different environment. You'll start to understand how Node.js (running on your computer) and browser JavaScript are related but serve different purposes.
+
 You'll understand why `"5" + "3"` gives a different result than `5 + 3`, and how to use this knowledge to build even more powerful programs.
 
-Great work! You're officially scripting with JavaScript! 🎉
+Great work! You're officially scripting with JavaScript on your own computer! 🎉
