@@ -90,65 +90,91 @@ What surprised you most about these experiments? What questions do you have abou
 
 ---
 
+## Understanding JavaScript Operations
+
+Before we build our first script, let's clarify what's happening with those operations you just experimented with:
+
+### String Operations
+- **Concatenation with `+`**: When you use `+` with text (strings), JavaScript joins them together
+  - `"Hello" + " " + "World"` becomes `"Hello World"`
+  - `"My age is " + 25` becomes `"My age is 25"` (JavaScript converts the number to text)
+
+### Math Operations
+- **Addition**: `5 + 3` gives you `8`
+- **Subtraction**: `10 - 4` gives you `6`
+- **Multiplication**: `6 * 7` gives you `42`
+- **Division**: `15 / 3` gives you `5`
+
+### The Important Difference
+- `5 + 3` = `8` (math addition)
+- `"5" + "3"` = `"53"` (string concatenation)
+
+JavaScript treats numbers and text differently! When you put quotes around numbers, they become text, and `+` joins them instead of adding them.
+
+### Comparison Operations
+- `5 > 3` asks "is 5 greater than 3?" and gives you `true`
+- `10 === 10` asks "are these exactly equal?" and gives you `true`
+- `"hello" === "goodbye"` gives you `false`
+
+### Variables
+- `let myName = "Alice"` stores the text "Alice" in a container called `myName`
+- You can use that container later: `"Hello, " + myName`
+
+---
+
 ## Part 2: Your First Real Script (30 minutes)
 
-Now let's take what we learned and build something more substantial. We'll create a personal introduction script that gathers information and tells a story.
+Now let's take what we learned and build something more substantial. We'll create a fictional character profile script that practices all the operations we just learned.
 
-### Activity: Personal Introduction Generator
+### Activity: Fictional Character Profile Generator
 
-**Create a new file:** `introduction.js` in this lab's folder (it should be `~/development/labs/w2_js_foundations` or similar if you followed the folder scheme from the environment setup lesson)
-
-> **Terminal Tip:** You can create and open the file in one command from your terminal. First navigate to the correct folder with `cd ~/development/labs/w2_js_foundations`, then type `code introduction.js` to open the VS Code text editor. This automatically creates an empty file named `introduction.js` and opens it.
-
-For this exercise, you can choose whether to type it out or copy/paste it into your file. Just know that typing out code (especially when it is new to you or you don't really understand what it is doing) really makes the learning happen more concretely in your mind. This is an important skill to practice as you learn programming and find help or solutions from various sources -- the "fix" or "solution" is actually far less important than the learning that happens when you take your time to try to understand it. Typing it out is a great way to force yourself to slow down and really think about what each part does. On the other hand, sometimes it can just feel like a chore, and can be unnecessary if you are already comfortable with the concepts. Use your judgment (now and in the future)!
+**Create a new file:** `character-profile.js` in your lab folder
 
 ```javascript
-// Personal Introduction Generator
-// This script creates a personalized introduction
+// Fictional Character Profile Generator
+// This script creates a profile for an imaginary character
 
-// Store information about yourself
-let firstName = "Your First Name";
-let lastName = "Your Last Name";
-let age = 25; // Change to your actual age
-let favoriteColor = "blue";
-let favoriteFood = "pizza";
-let hobby = "reading";
+// Store information about your character
+let characterName = "Luna Starweaver";
+let characterAge = 127; // Fantasy characters can be any age!
+let species = "elf";
+let magicalPower = "controlling starlight";
+let favoriteWeapon = "enchanted bow";
+let homeland = "the Crystal Forest";
 
 // Calculate some interesting facts
-let birthYear = 2024 - age;
-let nextAge = age + 1;
-let doubleAge = age * 2;
+let yearsOfExperience = characterAge - 18; // Assuming they started training at 18
+let powerLevel = characterAge * 2;
+let halfAge = characterAge / 2;
 
-// Create the introduction
+// Create the character profile
 console.log("=================================");
-console.log("     PERSONAL INTRODUCTION");
+console.log("    CHARACTER PROFILE");
 console.log("=================================");
 console.log();
-console.log("Hello! My name is " + firstName + " " + lastName);
-console.log("I am " + age + " years old, which means I was born in " + birthYear);
-console.log("Next year I will be " + nextAge + " years old!");
+console.log("Name: " + characterName);
+console.log("Age: " + characterAge + " years");
+console.log("Species: " + species);
+console.log("Special Power: " + magicalPower);
 console.log();
-console.log("Some things I love:");
-console.log("- My favorite color is " + favoriteColor);
-console.log("- My favorite food is " + favoriteFood);
-console.log("- I enjoy " + hobby + " in my free time");
+console.log("Background:");
+console.log("- Wields a " + favoriteWeapon + " with great skill");
+console.log("- Calls " + homeland + " their home");
+console.log("- Has been training for " + yearsOfExperience + " years");
 console.log();
-console.log("Fun fact: When I'm " + doubleAge + ", I'll be twice as old as I am now!");
+console.log("Stats:");
+console.log("- Current Power Level: " + powerLevel);
+console.log("- Half their current age: " + halfAge);
+console.log("- Years until next century: " + (200 - characterAge));
 console.log();
-console.log("Nice to meet you!");
+console.log("Adventure awaits!");
 console.log("=================================");
 ```
 
 **Your turn:**
-1. Customize this script with your own information
-2. Run it with: `node introduction.js` (Make sure you're in the right folder in your terminal! Use `cd` to navigate if needed, e.g. `cd ~/development/labs/w2_js_foundations`)
+1. Customize this script with your own fictional character
+2. Run it with: `node character-profile.js`
 3. Experiment with changing the values and running it again
-
-**Try These Modifications:**
-- Add more favorite things (favorite book, movie, place)
-- Calculate how many days old you are (age * 365)
-- Add some personality to the messages
-- Include information about where you're from
 
 ---
 
