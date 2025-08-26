@@ -1,4 +1,8 @@
-# JavaScript Foundations Lab - Wave 2
+
+<img src="assets/js_foundations_lab_header.png" alt="JavaScript Foundations Lab Header Image" />
+
+# JavaScript Foundations Lab
+
 
 Welcome to your the JavaScript Foundations Lab! This lab takes you from setting up your development environment to building interactive webpages with JavaScript.
 
