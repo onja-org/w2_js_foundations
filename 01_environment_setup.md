@@ -99,7 +99,7 @@ Even if you already have these tools installed, it's worth understanding what ea
 
 **Note:** VS Code is not the only free and open-source code editor, but it is a great option for beginners and experienced developers. If you have another favorite code editor and are willing to figure out how to do things in that editor, feel free to use it. Many code editors provide similar functionalities and there is no "correct" editor to use!
 
-> **Tip:** Did you know that you could open VS Code directly from your terminal? Whatever directory your terminal is in, if you type `code .` (with a space and a dot), it will open VS Code in that directory. This is super handy for quickly jumping into your projects. Someday you may even prefer using the terminal to get around your computer instead of clicking around with a mouse! Seems crazy right now? Just wait!
+> **Terminal Tip:** Did you know that you could open VS Code directly from your terminal? Whatever directory your terminal is in, if you type `code .` (with a space and a dot), it will open VS Code in that directory. This is super handy for quickly jumping into your projects. Someday you may even prefer using the terminal to get around your computer instead of clicking around with a mouse! Seems crazy right now? Just wait!
 
 ### 2. Installing Node.js
 
@@ -159,7 +159,7 @@ We recommend creating a dedicated space for all your coding work:
 4. **Navigate into it**: `cd development`
 5. **Create subfolders for different types of work**:
    ```
-   mkdir labs        # For Onja lab assignments
+   mkdir labs        # For Onja lab assignments 
    mkdir scratch     # For practice files and experiments
    mkdir projects    # For larger personal projects
    ```
@@ -169,10 +169,12 @@ We recommend creating a dedicated space for all your coding work:
 Your development folder should now look like this:
 ```
 ~/development/
-├── labs/          # Clone your forked lab repositories here
+├── labs/          # Clone your forked lab repositories here 
 ├── scratch/       # Practice files, experiments, quick tests
 └── projects/      # Larger projects and portfolio work
 ```
+
+You can clone your fork of this lab (w2_js_foundations)  to `~/development/labs` by opening a terminal, navigating to the labs folder with `cd ~/development/labs`, and then running the git clone command: `git clone <your-forked-repo-url>`
 
 ### Why This Matters
 

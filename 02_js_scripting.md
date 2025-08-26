@@ -96,7 +96,11 @@ Now let's take what we learned and build something more substantial. We'll creat
 
 ### Activity: Personal Introduction Generator
 
-**Create a new file:** `introduction.js` in your scratch folder
+**Create a new file:** `introduction.js` in this lab's folder (it should be `~/development/labs/w2_js_foundations` or similar if you followed the folder scheme from the environment setup lesson)
+
+> **Terminal Tip:** You can create and open the file in one command from your terminal. First navigate to the correct folder with `cd ~/development/labs/w2_js_foundations`, then type `code introduction.js` to open the VS Code text editor. This automatically creates an empty file named `introduction.js` and opens it.
+
+For this exercise, you can choose whether to type it out or copy/paste it into your file. Just know that typing out code (especially when it is new to you or you don't really understand what it is doing) really makes the learning happen more concretely in your mind. This is an important skill to practice as you learn programming and find help or solutions from various sources -- the "fix" or "solution" is actually far less important than the learning that happens when you take your time to try to understand it. Typing it out is a great way to force yourself to slow down and really think about what each part does. On the other hand, sometimes it can just feel like a chore, and can be unnecessary if you are already comfortable with the concepts. Use your judgment (now and in the future)!
 
 ```javascript
 // Personal Introduction Generator
@@ -137,7 +141,7 @@ console.log("=================================");
 
 **Your turn:**
 1. Customize this script with your own information
-2. Run it with: `node introduction.js`
+2. Run it with: `node introduction.js` (Make sure you're in the right folder in your terminal! Use `cd` to navigate if needed, e.g. `cd ~/development/labs/w2_js_foundations`)
 3. Experiment with changing the values and running it again
 
 **Try These Modifications:**
