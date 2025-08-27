@@ -4,7 +4,7 @@
 # JavaScript Foundations Lab
 
 
-Welcome to your the JavaScript Foundations Lab! This lab takes you from setting up your development environment to building interactive webpages with JavaScript.
+Welcome to the JavaScript Foundations Lab! This lab takes you from setting up your development environment to building interactive webpages with JavaScript.
 
 ## 🎯 Learning Objectives
 
@@ -87,8 +87,3 @@ After completing all four parts:
 2. **Add files to git**: `git add .` (Make sure you're in the correct lab directory -- for example `~/development/labs/w2_js_foundations/`)
 3. **Commit your changes**: `git commit -m "Complete JavaScript Foundations lab"`
 4. **Push to GitHub**: `git push origin main`
-
-Your completed lab will serve as:
-- **Portfolio evidence** of your JavaScript foundations
-- **Reference material** for future projects
-- **Progress marker** in your development journey

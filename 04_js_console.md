@@ -31,6 +31,8 @@ Let's start with familiar territory - the browser console works just like the No
    - **Safari**: Press `Cmd+Option+C` (you might need to enable Developer menu first)
 3. **Click on the "Console" tab** if it's not already selected
 
+![Browser Dev Tools Console Image](assets/foundations_devtools_console.png)
+
 ### Same JavaScript, Different Environment
 
 Try these familiar commands in the browser console:
@@ -81,11 +83,15 @@ Here's where it gets exciting! The browser automatically creates JavaScript obje
 
 **Try this experiment:**
 
-1. **Go to any website** (maybe google.com or wikipedia.org)
+1. **Go to any website** (wikipedia.org works well for these examples!)
 2. **In the console, type**: `document`
 3. **Press Enter**
 
 What you're seeing is the entire webpage as a JavaScript object!
+
+>**Tip**: You can clear the console anytime with a button at the top of the console. The console can get really messy on some sites! The image below is in Firefox but the button is in a similar spot in all browsers.
+
+![Clear console output image](assets/foundations_clear_console.png)
 
 ### Exploring the Webpage Object
 
@@ -127,7 +133,11 @@ document.body.style.backgroundColor = "lightblue"
 document.body.style.fontFamily = "Comic Sans MS"
 ```
 
+Don't worry, these changes only affect *your current view* of the webpage. They are local to your browser and will disappear if you refresh the page. :)
+
 ### Understanding What Just Happened
+
+We are interacting with the **Document Object Model (DOM)** (perhaps you remember this from earlier learning material), which is how browsers represent webpages as objects.
 
 - Every HTML element becomes a JavaScript object
 - You can find elements using `document.querySelector()`
@@ -145,7 +155,11 @@ Now let's create our own webpage with JavaScript built right in. This JavaScript
 
 ### Activity: Build Your Interactive Character Creator
 
+![Interactive Character Creator](assets/foundations_interactive_webpage.png)
+
 **Create a new file**: `character-creator.html` in your lab folder
+
+You don't need to understand all of the JavaScript yet, though you probably will recognize a lot of it from before! The HTML and CSS should be familiar to you. Read through the file to get a feel for it and then copy and paste the code below into your file.
 
 ```html
 <!DOCTYPE html>
@@ -368,7 +382,7 @@ Now let's create our own webpage with JavaScript built right in. This JavaScript
 ### Testing Your Webpage
 
 1. **Save the file** in your lab folder
-2. **Open it in your browser** (double-click the file or drag it to browser)
+2. **Open it in your browser** (double-click the file, drag it to browser, or type `open character-creator.html` in the terminal)
 3. **Open the developer console** (F12)
 4. **Try clicking the buttons** and watch the console messages
 
@@ -407,13 +421,14 @@ document.querySelector("h1").style.color = "purple"
 document.querySelector("button").style.fontSize = "20px"
 
 // Add new powers programmatically
+// `.push` adds an item to the end of an array -- don't worry, you'll learn more about htis later!
 currentCharacter.powers.push("Console Master", "Debug Vision")
 updateDisplay()
 ```
 
 ### Adding More Features
 
-Let's add some more functionality. Add this to your `<script>` section (before the closing `</script>` tag):
+Let's add some more functionality. Again, don't worry if you don't understand everything yet! This is just to give you an idea of what's possible. Copy and paste this to your `<script>` section (before the closing `</script>` tag):
 
 ```javascript
 // New function: Character battle simulator
@@ -477,9 +492,33 @@ function loadCharacter() {
 }
 ```
 
+Hm... we have a BattleSimulator now, but how do we use it? Try this in the console:
+
+```javascript
+battleSimulator()
+```
+
+We just called the function we added! You can also save and load your character:
+
+```javascript
+saveCharacter()
+// Refresh the page to clear currentCharacter
+loadCharacter()
+```
+
+Wouldn't it be nice to have buttons for these new functions? Add these buttons to your HTML inside the `<div>` with the other action buttons:
+
+```html
+<button onclick="battleSimulator()">⚔️ Battle Simulator</button>
+<button onclick="saveCharacter()">💾 Save Character</button>
+<button onclick="loadCharacter()">📂 Load Character</button>
+```
+
 ### Advanced Console Experiments
 
-Try these advanced techniques:
+In this section we will add some functions **directly in the console** to experiment with. Note that these functions will only exist while the page is open. If you refresh, they will disappear. They are not part of your webpage's JavaScript. If you wanted to keep them, you would need to add them to your HTML file like we did above.
+
+Try these advanced techniques by pasting them into your console and pressing enter:
 
 ```javascript
 // 1. Character analysis
@@ -528,6 +567,16 @@ function addSecretButton() {
     console.log("Secret button added!");
 }
 ```
+
+Now try calling these new functions in the console:
+
+```javascript
+analyzeCharacter()
+makePageFancy()
+addSecretButton()
+```
+
+Hopefully this gives you an idea of how JavaScript in your webpage and JavaScript in the console can work together. The key is that they both share the same environment in the browser! The browser console is where you can go to interact with your webpage's JavaScript live.
 
 ### Your Development Workflow
 
