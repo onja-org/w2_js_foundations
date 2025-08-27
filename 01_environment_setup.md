@@ -43,7 +43,9 @@ Remember when you ran `npm install` and `npm test`? You were using something cal
 
 ### What is a Terminal?
 
-A terminal is simply a text-based way to give commands directly to your computer. Instead of clicking buttons and icons, you type what you want to do.
+A terminal is simply a text-based way to give commands directly to your computer. Instead of clicking buttons and icons, you type what you want to do. "Terminal" refers to the application that provides this text interface (which might be called Terminal, Command Prompt, PowerShell, etc. depending on your operating system, or could be integrated into an editor like VS Code). The key is that a terminal refers to **the place where you type commands**.
+
+![Terminal example image](assets/foundations_terminal.png)
 
 ### What is a Shell?
 
@@ -52,7 +54,9 @@ A shell is the interpreter that understands your text commands. Common shells in
 - **zsh** (common on newer Mac systems)
 - **PowerShell** (Windows)
 
-Don't worry about the differences—they all do basically the same thing.
+Don't worry about the differences—they all do basically the same thing. The key is that the shell is what processes your commands and tells your computer what to do **after** you've typed them into the terminal and pressed enter.
+
+![Shell example image](assets/foundations_shell.png)
 
 ### VS Code Terminal vs "Real" Terminal
 
@@ -62,7 +66,7 @@ VS Code just gives you convenient access to your computer's terminal without lea
 
 ### The Concept of "Where Am I?"
 
-Your terminal is always **pointing** to some location on your computer—to specific folders (called directories). This is why sometimes commands work and sometimes they don't:
+Your terminal is always **pointing** to some location on your computer—to a specific folder (called a directory). This is why sometimes commands work and sometimes they don't:
 
 - When you open VS Code's terminal, it starts in your project folder
 - When you open your computer's terminal, it might start in your home folder
@@ -72,13 +76,11 @@ You can always see where you are by typing `pwd` (print working directory).
 
 You will often use commands like `cd` (change directory) to navigate to the right folder. For example, `cd ~` takes you to your home folder. `cd ..` takes you up one folder. `cd foldername` takes you into a folder called `foldername`.
 
-**Try This:** Open VS Code's terminal and type `pwd`. Then open your computer's terminal and type `pwd`. See the difference? Then type `ls` (or `dir` on Windows) in both to see the files in each location. Try navigating with `cd` from your home folder to find your project folder. These commands are important and will help you to understand where you are in your file system.
-
 ---
 
 ## Installation Guide
 
-Even if you already have these tools installed, it's worth understanding what each one does and how to install them fresh (for future reference or new computers).
+Even if you already have these tools installed, it's worth understanding what each one does and how to install them fresh (for future reference or new computers). But if you do have them installed, you can skip the installation steps and just test that they work.
 
 ### 1. Installing VS Code
 
@@ -140,6 +142,8 @@ Think of it like a workshop: some tools help you build (hammer, saw) while other
 **Test it:**
 1. In your terminal, type `npm --version`
 2. You should see a version number
+
+![NPM version command image](assets/foundations_npm_version.png)
 
 ---
 
@@ -212,13 +216,13 @@ Now that everything is installed, let's explore what these tools actually do.
 
 Remember those `npm install` commands you've been running? Let's see what they actually did.
 
-1. Open VS Code in a project where you previously ran `npm install`
+1. Open VS Code in a project where you previously ran `npm install` (w2_css_js_mini_project is one example that used npm for testing)
 2. Look in the file explorer - do you see a folder called `node_modules`?
 3. Open that folder and explore
 
-**What you're seeing:** All the code packages that npm downloaded for you. Each folder is a different tool or library created by developers around the world.
+**What you're seeing:** All the code packages that npm downloaded for you. Each folder is a different tool or library created by developers around the world. When you run `npm install`, npm reads the `package.json` file in your project and downloads all the packages listed there (and any packages which *those* packages depend on) into the `node_modules` folder.
 
-**The key insight:** Some of these packages are like workshop tools (they help you build and test your code), while others are like building materials (they become part of your final application). The npm install command downloaded both types to your computer, but only the "building material" packages would end up in your final website or app.
+Some of these packages are like workshop tools (they help you build and test your code), while others are like building materials (they become part of your final application). The npm install command downloaded both types to your computer, but only the "building material" packages would end up in your final website or app. In the case of the mini project, the tools were all for testing your code when you run `npm test`, so they don't become part of the final product.
 
 **Mind-blowing fact:** That `node_modules` folder might contain thousands of files and hundreds of packages, all working together to power your project.
 
@@ -227,13 +231,14 @@ Remember those `npm install` commands you've been running? Let's see what they a
 VS Code can do much more than just edit text files.
 
 **Explore these features:**
-1. **Integrated Terminal:** Press `Ctrl+`` (or `Cmd+`` on Mac)
+1. **Integrated Terminal:** Press ``Ctrl + ` `` (or `` Cmd + ` `` on Mac)
 2. **File Explorer:** The sidebar on the left
 3. **Extensions:** Click the squares icon in the sidebar
 4. **Command Palette:** Press `Ctrl+Shift+P` (or `Cmd+Shift+P`)
 
 **Try installing a JavaScript extension:**
 1. Go to Extensions
+  ![VSCode Extension Image](assets/foundations_vscode_extensions.png)
 2. Search for "JavaScript"
 3. Install "JavaScript (ES6) code snippets"
 
@@ -272,19 +277,8 @@ By now you should be starting to see how these tools work together:
 This is the basic cycle you'll follow:
 
 1. **Write** code in VS Code
-2. **Run** code using Node.js through the terminal
-3. **Install** helpful packages using npm
-4. **Debug** and explore using various tools
-
----
-
-## Reflection Questions
-
-Before moving on to the next part, take a moment to think about:
-
-1. What was the most surprising thing you learned about your development environment?
-2. How does understanding the terminal change your mental model of how computers work?
-3. What questions do you still have about these tools?
+2. **Install** helpful packages using npm
+3. **Run** code using Node.js through the terminal
 
 ---
 
