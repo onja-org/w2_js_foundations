@@ -6,7 +6,7 @@
 
 You've been experimenting with JavaScript in the REPL and building scripts. Now let's step back and understand what you've actually been doing - you've been working with different **types** of data and using **operators** to manipulate them.
 
-Today we'll make explicit what you've been learning intuitively, show you more of JavaScript's power, and help you avoid common type-related traps.
+In this lesson we'll make explicit what you've been learning intuitively, show you more of JavaScript's power, and help you avoid common type-related traps.
 
 ## What You'll Learn
 
@@ -24,7 +24,7 @@ Today we'll make explicit what you've been learning intuitively, show you more o
 
 Let's look at the different kinds of data you've been working with:
 
-**Open the Node REPL** (`node` in your terminal) and try these:
+**Open the Node REPL** (run `node` in your terminal -- it doesn't really matter what directory you're in since the REPL doesn't create or need any files) and try these:
 
 ```javascript
 // You've been using NUMBERS
@@ -117,7 +117,7 @@ typeof (5 > 3)      // "boolean"
 
 ## Part 2: A Taste of JavaScript's Power (20 minutes)
 
-Beyond the basic types, JavaScript has more powerful ways to organize data. You'll learn these in detail later, but let's get a preview:
+Beyond the basic types, JavaScript has more powerful ways to organize data. You'll learn these in detail later, but let's get a preview (try all of this in the REPL):
 
 ### Arrays: Lists of Things
 
@@ -233,7 +233,7 @@ console.log();
 
 // Bug 5: Boolean Logic Confusion
 console.log("=== User Permissions ===");
-let isLoggedIn = "true";  // This came from a form
+let isLoggedIn = "false";  // This came from a form
 let hasPermission = true;
 let canAccess = isLoggedIn && hasPermission;
 console.log("Is logged in: " + isLoggedIn + " (type: " + typeof isLoggedIn + ")");
@@ -247,7 +247,10 @@ console.log("Can you identify and fix the type-related bugs?");
 
 ### Your Debugging Mission
 
-1. **Run the script**: `node type-confusion-bugs.js`
+1. **Run the script**: `node type-confusion-bugs.js`. It should look like this:
+
+    ![Type-confusion script output image](assets/foundations_confusion_script.png)
+
 2. **Analyze the output**: What looks wrong?
 3. **Identify the bugs**: Where are types being mixed up?
 4. **Fix the bugs**: Change the code to get the expected results
@@ -283,7 +286,7 @@ let item1Price = Number("10.99");  // Or just 10.99
 let item2Price = Number("5.50");   // Or just 5.50
 
 // Fix 5: Convert string to boolean
-let isLoggedIn = true;  // Remove quotes or use Boolean("true") carefully
+let isLoggedIn = false;  // Remove quotes or use Boolean("false") carefully
 ```
 </details>
 
@@ -313,6 +316,8 @@ let isActive: boolean = true;    // This MUST be true or false
 // TypeScript would give you an error if you tried:
 let userAge: number = "25";  // ❌ Error! String can't be assigned to number
 ```
+
+Typescript also provides type safety for functions, objects, and more, which you will learn about later. It is a powerful tool for building large, reliable applications where you can feel confident everything is working how you expect it to. The type problems we experienced now are just a small taste of the kinds of issues that can arise in larger applications. Typescript will be your friend!
 
 ### Building Good Type Habits Now
 
