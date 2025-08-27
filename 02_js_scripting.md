@@ -124,7 +124,7 @@ JavaScript treats numbers and text differently! When you put quotes around numbe
 
 ## Running JavaScript on Your Computer (Not in a Browser!)
 
-Before we build our first script, let's pause and appreciate what's happening here. You're about to run JavaScript directly on your computer using Node.js - no browser required!
+Before we build our first script, let's pause and appreciate what's happening here. You're running JavaScript directly on your computer using Node.js when you use the REPL. Next up, we're going to be using Node.js to run individual JavaScript files, which is very similar to the REPL except that you can save the file and run it as many times as you want. There is no browser required for this!
 
 **This is different from HTML/CSS workflow:**
 - With HTML/CSS: You wrote files and opened them in a browser
@@ -151,6 +151,8 @@ Now let's take what we learned and build something more substantial. We'll creat
 ### Activity: Fictional Character Profile Generator
 
 **Create a new file:** `character-profile.js` in your lab folder
+
+> **Note on copy / paste:** In this example and in the future, you can use your own judgement whether to copy and paste or type out the code yourself. Especially when you are learning a new concept or encountering a new technique, typing it out helps you to learn and understand the concepts better. This is actually far more important than just having working code -- the whole point of this course is to learn how to think like a programmer. On the other hand, sometimes you may already understand the concepts, and typing it out can just feel like busy work. Use your judgement!
 
 ```javascript
 // Fictional Character Profile Generator
@@ -195,7 +197,10 @@ console.log("=================================");
 
 **Your turn:**
 1. Customize this script with your own fictional character
-2. Run it with: `node character-profile.js` (This runs your JavaScript directly on your computer!)
+2. Run it with: `node character-profile.js` (This runs your JavaScript directly on your computer!) It should look something like this:
+
+  ![character-profile example run](assets/foundations_introduction_script.png)
+
 3. Experiment with changing the values and running it again
 
 ---
@@ -263,7 +268,10 @@ console.log("🎉 Calculation complete! Thanks for using Smart Calculator!");
 ```
 
 **Experiment with this script:**
-1. Run it as-is: `node smart-calculator.js` (Watch your computer execute this JavaScript!)
+1. Run it as-is: `node smart-calculator.js` (Watch your computer execute this JavaScript!) It should something like this:
+
+  ![smart-calculator example run](assets/foundations_smart_calc_script.png)
+  
 2. Change the values of `firstNumber` and `secondNumber`
 3. Run it again and see how the responses change
 4. Try making the numbers equal - what happens?

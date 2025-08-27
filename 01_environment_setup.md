@@ -238,7 +238,9 @@ VS Code can do much more than just edit text files.
 
 **Try installing a JavaScript extension:**
 1. Go to Extensions
+
   ![VSCode Extension Image](assets/foundations_vscode_extensions.png)
+  
 2. Search for "JavaScript"
 3. Install "JavaScript (ES6) code snippets"
 
