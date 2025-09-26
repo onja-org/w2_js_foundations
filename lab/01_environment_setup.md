@@ -45,7 +45,7 @@ Remember when you ran `npm install` and `npm test`? You were using something cal
 
 A terminal is simply a text-based way to give commands directly to your computer. Instead of clicking buttons and icons, you type what you want to do. "Terminal" refers to the application that provides this text interface (which might be called Terminal, Command Prompt, PowerShell, etc. depending on your operating system, or could be integrated into an editor like VS Code). The key is that a terminal refers to **the place where you type commands**.
 
-![Terminal example image](assets/foundations_terminal.png)
+![Terminal example image](../assets/foundations_terminal.png)
 
 ### What is a Shell?
 
@@ -56,7 +56,7 @@ A shell is the interpreter that understands your text commands. Common shells in
 
 Don't worry about the differences—they all do basically the same thing. The key is that the shell is what processes your commands and tells your computer what to do **after** you've typed them into the terminal and pressed enter.
 
-![Shell example image](assets/foundations_shell.png)
+![Shell example image](../assets/foundations_shell.png)
 
 ### VS Code Terminal vs "Real" Terminal
 
@@ -143,7 +143,7 @@ Think of it like a workshop: some tools help you build (hammer, saw) while other
 1. In your terminal, type `npm --version`
 2. You should see a version number
 
-![NPM version command image](assets/foundations_npm_version.png)
+![NPM version command image](../assets/foundations_npm_version.png)
 
 ---
 
@@ -239,7 +239,7 @@ VS Code can do much more than just edit text files.
 **Try installing a JavaScript extension:**
 1. Go to Extensions
 
-  ![VSCode Extension Image](assets/foundations_vscode_extensions.png)
+  ![VSCode Extension Image](../assets/foundations_vscode_extensions.png)
   
 2. Search for "JavaScript"
 3. Install "JavaScript (ES6) code snippets"

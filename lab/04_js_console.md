@@ -31,7 +31,7 @@ Let's start with familiar territory - the browser console works just like the No
    - **Safari**: Press `Cmd+Option+C` (you might need to enable Developer menu first)
 3. **Click on the "Console" tab** if it's not already selected
 
-![Browser Dev Tools Console Image](assets/foundations_devtools_console.png)
+![Browser Dev Tools Console Image](../assets/foundations_devtools_console.png)
 
 ### Same JavaScript, Different Environment
 
@@ -91,7 +91,7 @@ What you're seeing is the entire webpage as a JavaScript object!
 
 >**Tip**: You can clear the console anytime with a button at the top of the console. The console can get really messy on some sites! The image below is in Firefox but the button is in a similar spot in all browsers.
 
-![Clear console output image](assets/foundations_clear_console.png)
+![Clear console output image](../assets/foundations_clear_console.png)
 
 ### Exploring the Webpage Object
 
@@ -155,7 +155,7 @@ Now let's create our own webpage with JavaScript built right in. This JavaScript
 
 ### Activity: Build Your Interactive Character Creator
 
-![Interactive Character Creator](assets/foundations_interactive_webpage.png)
+![Interactive Character Creator](../assets/foundations_interactive_webpage.png)
 
 **Create a new file**: `character-creator.html` in your lab folder
 

@@ -199,7 +199,7 @@ console.log("=================================");
 1. Customize this script with your own fictional character
 2. Run it with: `node character-profile.js` (This runs your JavaScript directly on your computer!) It should look something like this:
 
-  ![character-profile example run](assets/foundations_introduction_script.png)
+  ![character-profile example run](../assets/foundations_introduction_script.png)
 
 3. Experiment with changing the values and running it again
 
@@ -270,7 +270,7 @@ console.log("🎉 Calculation complete! Thanks for using Smart Calculator!");
 **Experiment with this script:**
 1. Run it as-is: `node smart-calculator.js` (Watch your computer execute this JavaScript!) It should something like this:
 
-  ![smart-calculator example run](assets/foundations_smart_calc_script.png)
+  ![smart-calculator example run](../assets/foundations_smart_calc_script.png)
   
 2. Change the values of `firstNumber` and `secondNumber`
 3. Run it again and see how the responses change

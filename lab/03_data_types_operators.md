@@ -249,7 +249,7 @@ console.log("Can you identify and fix the type-related bugs?");
 
 1. **Run the script**: `node type-confusion-bugs.js`. It should look like this:
 
-    ![Type-confusion script output image](assets/foundations_confusion_script.png)
+    ![Type-confusion script output image](../assets/foundations_confusion_script.png)
 
 2. **Analyze the output**: What looks wrong?
 3. **Identify the bugs**: Where are types being mixed up?
